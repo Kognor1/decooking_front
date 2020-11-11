@@ -24,7 +24,7 @@ state = {
 
 componentDidMount () {
     
-    axios.get('https://decooking.ru/recipe/ingredient_type')
+    axios.get('https://decooking.ru/dev/recipe/ingredient_type')
     .then(json => json.data.map(result => (
     {
     name: result.name,
@@ -52,7 +52,7 @@ handleSubmit = (event) => {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         data: data,
-        url: 'http://decooking.ru/recipe/findByIngredients',
+        url: 'https://decooking.ru/dev/recipe/findByIngredients',
     };
 
     axios(options).then(res=>{console.log(res)});
