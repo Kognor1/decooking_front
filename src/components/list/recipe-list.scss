@@ -1,0 +1,10 @@
+.list{
+    margin: 50px auto;
+    max-width: 1000px;
+
+    display: -webkit-flex; 
+    //-webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
