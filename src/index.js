@@ -9,17 +9,18 @@ import './index.css';
 //import components
 import App from './App';
 import Header from './components/header/header';
-import SearchLine from './components/search-line/search-line';
+//import SearchLine from './components/search-line/search-line';
 import RegistrationPage from "./components/RegistrationPage/js/RegistrationPage";
 import ResetPasswordPage from "./components/ResetPasswordPage/js/ResetPasswordPage";
+import HeadPage from './components/HeadPage/head-page';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <>
         <Header />
-        <div className=" container wrapper">
-          <Route exact path="/" component={SearchLine} />
+        <div className=" container-wrapper">
+          <Route exact path="/" component={HeadPage} />
           <Route path="/login" component={App} />
           <Route exact path="/register" component={RegistrationPage} />
           <Route exact path="/resetPassword" component={ResetPasswordPage} />

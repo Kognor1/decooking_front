@@ -1,10 +1,17 @@
 .list{
-    margin: 50px auto;
-    max-width: 1000px;
-
-    display: -webkit-flex; 
-    //-webkit-flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
+    margin: 0 auto;
+    width: 90vw;
+    height: 75vh;
+    overflow-y: scroll;
 }
+
+.list::-webkit-scrollbar { width: 0; }
+
+.del-margin-bottom {
+    margin-bottom: 0;
+}
+
+.card-cursor {
+    cursor: pointer;
+}    
+    
