@@ -43,8 +43,15 @@ handleSubmit = (event) => {
         data: data,
         url: 'https://decooking.ru/dev/recipe/findByIngredients',
     };
-
-    axios(options).then(res=>{console.log("find ", res)});
+    // this.props.getRecipes(            {
+    //     id:"eghjng95i490", 
+    //     name: "Халва", 
+    //     photo: 'https://i.pinimg.com/originals/7b/6b/0e/7b6b0e189d627255b099c96423126d19.jpg'
+    // });
+    axios(options).then(res => {
+        console.log("find ", res);
+        this.props.setRecipes(res.data);
+    });
     //здесь нужно переслать данные в список рецептов
 }
 
